@@ -1,0 +1,109 @@
+.button-blue {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+
+}
+
+.text-sm {
+    -fx-font-size: 12px;
+}
+
+.text-md {
+    -fx-font-size: 14px;
+}
+
+m-2 {
+    -fx-margin: 2px;
+}
+
+.m-4 {
+    -fx-margin: 4px;
+}
+
+.m-8 {
+    -fx-margin: 8px;
+}
+
+.m-16 {
+    -fx-margin: 16px;
+}
+
+.m-24 {
+    -fx-margin: 24px;
+}
+
+.text-lg {
+    -fx-font-size: 18px;
+}
+
+.text-xl {
+    -fx-font-size: 24px;
+}
+
+.hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+.button-blue:hover {
+    -fx-background-color: #1976D2;
+}
+
+.button-blue:pressed {
+    -fx-background-color: #0D47A1;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2px;
+    -fx-font-size: 16px;
+    -fx-border-radius: 4px;
+}
+
+.text-field:focused {
+    -fx-border-color: #2196F3;
+}
+
+.text-field .text {
+    -fx-fill: #2196F3;
+}
+
+.text-field .prompt-text {
+    -fx-fill: grey;
+}
+.card {
+    -fx-padding: 10px;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);
+}
+.table-view {
+    -fx-background-color: #f8f8f8;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d3d3d3;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f0f0f0;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #b2d8ff;
+}
+
+.table-cell {
+    -fx-padding: 0.5em;
+}

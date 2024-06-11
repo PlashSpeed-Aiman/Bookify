@@ -1,0 +1,9 @@
+The Great Gatsby,F. Scott Fitzgerald,   7.99
+Brothers Karamazov,Fyodor Dostoevsky,  9.99
+Pride and Prejudice,Jane Austen,       4.99
+Harry Potter,J.K. Rowling,             9.99
+The Catcher in the Rye,J.D. Salinger,  6.99
+The Art of War,Sun Tzu,                3.99
+The Hobbit,J.R.R. Tolkien,             5.99
+Lord of the Flies,William Golding,      6.99
+The Odyssey,Homer,                     7.99
