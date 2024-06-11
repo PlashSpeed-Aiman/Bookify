@@ -4,6 +4,7 @@ public class Book {
     private String title;
     private String author;
     private double price;
+    private String imageDirectory;
 
     public Book(String title, String author, double price) {
         this.title = title;
@@ -21,5 +22,13 @@ public class Book {
 
     public double getPrice() {
         return price;
+    }
+
+    public String getImageDirectory() {
+        return imageDirectory;
+    }
+
+    public void setImageDirectory(String imageDirectory) {
+        this.imageDirectory = imageDirectory;
     }
 }

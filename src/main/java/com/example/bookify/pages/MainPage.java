@@ -10,6 +10,8 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -81,11 +83,28 @@ public class MainPage extends Page{
                     // Create a new Label with the details of the clicked book
                     VBox vbox = new VBox();
                     VBox pane = new VBox();
+                    //set image to nothing if it is null
+                    String imgDir = clickedRow.getImageDirectory();
+                    try {
+                        if (getClass().getResource(imgDir) == null) {
+                            imgDir = getClass().getResource("/images/no-image.png").toExternalForm();
+                        }
+                        else {
+                            imgDir = getClass().getResource(imgDir).toExternalForm();
+                        }
+                    }
+                    catch (Exception e) {
+                        imgDir = getClass().getResource("/images/no-image.jpg").toExternalForm();
+                    }
+
+
                     vbox.getStyleClass().add("card");
                     vbox.getChildren().addAll(
                             new Label("Title: " + clickedRow.getTitle()),
                             new Label("Author: " + clickedRow.getAuthor()),
-                            new Label("Price: " + clickedRow.getPrice())
+                            new Label("Price: " + clickedRow.getPrice()),
+                            new ImageView(new Image(imgDir, 200, 200, false, false, false))
+
                     );
 
                     VBox.setMargin(vbox, new javafx.geometry.Insets(10, 10, 10, 10));

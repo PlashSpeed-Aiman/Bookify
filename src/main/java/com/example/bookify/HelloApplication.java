@@ -14,7 +14,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
 
         stage.setTitle("Hello!");
-        stage.setScene(new MainPage().getScene());
+        stage.setScene(new LoginPage(stage).getScene(  ));
         stage.show();
     }
 

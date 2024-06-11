@@ -9,13 +9,15 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class LoginPage extends Page{
 
+    Stage _stage;
     private Pane accountRoot;
     private Pane[] accountPanes;
-    public LoginPage() {
-
+    public LoginPage(Stage stage) {
+        _stage = stage;
         createAccountPanes();
         createLoginSection();
         createRegisterSection();
@@ -44,6 +46,10 @@ public class LoginPage extends Page{
         password.setPromptText("Password");
 
         Button button = new Button("Login");
+        button.setOnAction(e -> {
+            _stage.setScene(new MainPage().getScene());
+        });
+
         button.getStyleClass().add("button-blue");
 
         username.getStyleClass().add("text-field");

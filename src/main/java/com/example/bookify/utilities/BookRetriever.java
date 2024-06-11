@@ -17,6 +17,7 @@ public  class BookRetriever {
                 String title = parts[0];
                 String author = parts[1];
                 double price = Double.parseDouble(parts[2]);
+                String imageDirectory = parts[3];
                 Book book = new Book(title, author, price);
                 books.add(book);
             }
